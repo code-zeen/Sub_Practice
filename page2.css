@@ -1,0 +1,114 @@
+#page2 {
+  background-image: url(images/main_movie1.png); background-repeat: no-repeat; background-size: cover;
+}
+
+#page2 {
+  background-attachment: fixed;
+  padding-top: 40px;
+}
+#insight {
+  background-color: #f0f0f0;
+  height: 95%;
+}
+.page_tit {
+  text-align: center;
+  line-height: 100px;
+  height: 100px;
+  font-size: 48px;
+}
+
+.thumb_list li {
+  width: 373px; height:320px;
+  margin-left: 40px; margin-top: 40px;
+  float: left;
+  position: relative;
+}
+.thumb_list li.col8 {
+  width: 786px;
+}
+.thumb_list li a {
+  display: block;
+  color: #333;
+  width: 360px; height: 300px;
+  margin: 7px;
+  background-color: #e1e1e1;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.thumb_list li.col8 a {
+  width: 770px;
+  color: white;
+  background-image: url(images/bg_nft.jpg); background-size: cover; background-repeat: no-repeat;
+}
+
+/* 호버 */
+.thumb_list li a:hover {
+  border: 3px solid #fc3c08;
+  color: #fc3c08;
+}
+.thumb_list li.col8 a:hover {
+  color: white;
+}
+.thumb_list li a::after {
+  content: "→";
+  font-weight: bold;
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  color: #fc3c08;
+  /* display: none; */
+  opacity: 0;
+  transition: 0.3s;
+}
+.thumb_list li a:hover::after {
+  /* display: block; */
+  opacity: 1;
+}
+
+.cat_tit {
+  text-decoration: underline;
+  padding: 24px;
+  padding-bottom: 0;
+}
+.lst_tit {
+  padding: 12px 24px 0;
+  font-size: 28px;
+  height: 80px;
+  /* Ellipses */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.lst_com {
+  height: 38px;
+  padding: 14px 24px; margin-bottom: 30px;
+  /* Ellipses */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* 
+말줄임표 3총사
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+
+word-wrap: break-word; 단어의 분리
+-webkit-line-clamp: 3; 나타내고 싶은 줄 수
+-webkit-box-orient: vertical; 세로로 몇줄
+*/
+
+.lst_date {
+  padding: 24px;
+  font-size: small;
+  color: gray;
+}
+li.col4 .cat_tit {
+  color: #fc3c08;
+}

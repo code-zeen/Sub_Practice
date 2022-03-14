@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+/* 초기화 */
+*{margin: 0;padding: 0;}
+body,html{width: 100%;height: 100%;font-family: 'Noto Sans KR', sans-serif;}
+ul{list-style: none;}
+a{text-decoration: none;}
+button,a,input{border:0;outline: 0;}
+
+/* 공통서식 */
+.container {
+  width: 100%;
+  height: 100%;
+}
+.page {
+  clear: both;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.page_wrap {
+  width: 1280px;
+  margin: auto;
+}
+
+/* 헤더 */
+#hd {
+  width: 100%;
+  height: 42px;
+  background: rgba(0,0,0,0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+#hd #tnb_lang {
+  float: left;
+}
+#hd #tnb_skip {
+  float: right;
+}
+#hd nav li {
+  float: left;
+  padding: 0;
+  position: relative;
+}
+#hd nav li::after {
+  content: "|";
+  color: rgba(221, 221, 221, 0.288);
+  font-size: 10px;
+  position: absolute;
+  top: 13px;
+  right: 0;
+}
+#hd nav li:last-child::after {
+  content: "";
+}
+
+#hd nav li a {
+  display: block;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 42px;
+}
+#hd nav li a:hover {
+  color: #fc3c08;
+}
+#hd nav#tnb_skip li a:hover {background-color: rgba(0,0,0,0.5);}
+
+/* 열기버튼 */
+.open_btn {
+  display: block;
+  width: 57px;
+  height: 51px;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  z-index: 50;
+  background-image: url(images/main_sprite_pannel.png);
+  background-position: -133px -145px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  /* 화면 밖으로 밀어버리긔 */
+}
+
+/* 사이드 햄버거메뉴 */
+#gnb {
+  display: block;
+  position: fixed;
+  left: -500px;
+  top: 0;
+  z-index: 100;
+  width: 500px;
+  height: 100%;
+  background-color: rgba(255,255,255,0.85);
+  text-align: center;
+  transition: 0.5s;
+}
+/* 닫기버튼 */
+.close_btn {
+  display: block;
+  width: 40px;
+  height: 51px;
+  position: absolute;
+  top: 50px;
+  left: 420px;
+  z-index: 50;
+  background-image: url(images/main_sprite_pannel.png);
+  background-position: -235px -145px;
+  cursor: pointer;
+}
+#ck1 {
+  display: none;
+}
+#ck1:checked~#gnb {
+  left: 0;
+}
+
+
+#gnb .top {
+  margin-top: 200px;
+  font-size: 36px;
+}
+#gnb .top a {
+  display: block;
+  color: #333;
+  height: 80px;
+  line-height: 80px;
+}
+#gnb .top a:hover {
+  color: #fc3c08;
+}
+
+#gnb .mid {
+  margin-top: 100px;
+  font-size: 20px;
+}
+#gnb .mid a {
+  display: block;
+  color: #fc3c08;
+  height: 40px;
+  line-height: 40px;
+}
+#gnb .mid a:hover {
+  text-decoration: underline;
+}
+
+#gnb .bot {
+  margin-top: 100px;
+  font-size: 14px;
+}
+#gnb .bot li {
+  display: inline-block;
+}
+#gnb .bot a {
+  display: block;
+  color: gray;
+  padding: 0 25px;
+  height: 30px;
+  line-height: 30px;
+}
+
+#gnb .bot a:hover {
+  color: #fc3c08;
+}

@@ -1,0 +1,58 @@
+#page3 {
+  background-image: url(images/bg_office_introduce_02.jpg); background-repeat: no-repeat; background-size: cover;
+}
+
+#vs_con {
+  padding-top: 50px;
+}
+/* white box */
+#vs {
+  width: 100%; /* 1280px */
+  background: #fff;
+  padding-top: 50px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.img_box {
+  width: 400%;
+}
+.img_box li {
+  float: left;
+  width: 25%;
+}
+
+/* image */
+.pic {
+  display: block;
+  float: left;
+  width: 580px;
+  margin-left: 40px;
+}
+/* text */
+.tit_box {
+  float: right;
+  width: 580px;
+  margin-right: 40px;
+}
+/* margin 40 + pic 580 + margin 40 + titbox 580 + margin 40 = 1280px */
+.vs_tit {}
+.vs_com {}
+.more {}
+
+/* View More */
+.more {
+  display: block;
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #333;
+  border: 1px solid #333;
+}
+
+
+/* slider button */
+.btn_box {}
+.btn_box .on {}
+

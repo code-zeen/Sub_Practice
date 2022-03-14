@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kim &amp; Chang | 김·장 법률사무소</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- 아이폰 계열의 웹앱 설정 -->
+  <meta name="apple-mobile-web-app-title" content="김앤장 법률사무소">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- 공통 웹앱 검색엔진의 검색 결과 설정-->
+  <meta name="title" content="김앤장 법률사무소">
+  <meta name="keywords"
+    content="김앤장, 김&amp;장, 김엔장, 김장법률사무소, 법무법인, 로펌, 법률사무소, 외국변호사, 변리사, 한국 1위 로펌, 국내 최대 로펌, 세계 100대 로펌, Kim &amp; Chang, Chang, K&amp;C">
+  <meta name="description"
+    content="법률사무소는 1973년 설립 이래 법률서미스의 선진화, 전문화를 선도하며 한국의 경제발전과 그 궤를 같이하며 성장해 온 국내 최대규모의 종합 법률사무소입니다.">
+  <!-- SNS에 의한 검색결과 설정 -->
+  <meta itemprop="name" content="김앤장 법률사무소">
+  <meta itemprop="description"
+    content="법률사무소는 1973년 설립 이래 법률서미스의 선진화, 전문화를 선도하며 한국의 경제발전과 그 궤를 같이하며 성장해 온 국내 최대규모의 종합 법률사무소입니다.">
+  <meta itemprop="image" content="./img/thumb_sns-300x300.jpg">
+  <!-- 페이스북 연동 설정 -->
+  <meta property="fb:app_id" content="APP_ID">
+  <!-- 페이스북, 트위터, 카카오톡의 크롤러 연동 설정 -->
+  <meta property="og:type" content="Website">
+  <meta property="og:title" content="김앤장 법률사무소">
+  <meta property="og:url" content="http://아이디.dothome.co.kr/d1/index.html">
+  <meta property="og:description"
+    content="법률사무소는 1973년 설립 이래 법률서미스의 선진화, 전문화를 선도하며 한국의 경제발전과 그 궤를 같이하며 성장해 온 국내 최대규모의 종합 법률사무소입니다.">
+  <meta property="og:image" content="images/sl2.png">
+  <!-- 메타포 아이콘 설정 -->
+  <link rel="shortcut icon" href="images/farvicon_32x32.png">
+  <link rel="shortcut icon" href="images/farvicon_32x32.png" type="image/x-icon">
+  <link rel="apple-touch-icon-180x180" sizes="180x180" href="images/ico_kimchang.png">
+  <link rel="icon" type="image/ico" sizes="16x16" href="images/farvicon_16x16.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/farvicon_32x32.png">
+
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="page2.css">
+  <link rel="stylesheet" href="page3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    /* 비디오 */
+    #vdo {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    #vdo1 {
+      display: block;
+      /* display: none; */
+      width: 100%;
+      height: auto;
+    }
+
+    /* 검색창 */
+    #cover_page {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10px;
+    }
+
+    .tit {
+      width: 444px;
+      height: 55px;
+      margin: 300px auto 90px;
+      background-image: url(images/main_sprite_pannel.png);
+      background-repeat: no-repeat;
+    }
+
+    #frm1 {
+      width: 1000px;
+      height: 80px;
+      margin: 0 auto;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    #keyword {
+      display: block;
+      width: 910px;
+      height: 70px;
+      margin: 5px;
+      font-size: 18px;
+      text-indent: 24px;
+      background-color: transparent;
+      float: left;
+      transition: 0.3s;
+    }
+
+    #keyword:focus {
+      background-color: white;
+    }
+
+    #search {
+      display: block;
+      width: 70px;
+      height: 70px;
+      margin: 5px;
+      background-image: url(images/ico1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      text-indent: -9999px;
+      background-color: transparent;
+      float: right;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    #keyword:focus~#search {
+      background-color: #fff;
+      background-image: url(images/ico1_focus.png);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header id="hd">
+      <nav id="tnb_lang">
+        <ul class="left">
+          <li><a href="#">KO</a></li>
+          <li><a href="#">EN</a></li>
+          <li><a href="#">JP</a></li>
+          <li><a href="#">CN</a></li>
+        </ul>
+      </nav>
+      <nav id="tnb_skip">
+        <ul class="right">
+          <li><a href="#">지식재산권</a></li>
+          <li><a href="#">사회공헌</a></li>
+          <li><a href="#">인재채용</a></li>
+        </ul>
+      </nav>
+    </header>
+    <input type="checkbox" id="ck1">
+    <label for="ck1" class="open_btn"></label>
+    <nav id="gnb">
+      <label for="ck1" class="close_btn"></label>
+      <ul class="top">
+        <li><a href="#">EXPERTISE</a></li>
+        <li><a href="#">PROFESSIONALS</a></li>
+        <li><a href="#">INSIGHTS</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+      <ul class="mid">
+        <li><a href="#">지식재산권</a></li>
+        <li><a href="#">인재채용</a></li>
+        <li><a href="#">사회공헌위원회</a></li>
+        <li><a href="#">재단법인 나은</a></li>
+      </ul>
+      <ul class="bot">
+        <li><a href="#">사무소 위치</a></li>
+        <li><a href="#">연락처</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="page" id="page1">
+      <figure id="vdo">
+        <video src="images/main_movie3.mp4" id="vdo1" autoplay loop muted></video>
+      </figure>
+      <section class="page_wrap" id="cover_page">
+        <h2 class="tit">
+          <!-- 444x55 -->
+        </h2>
+        <form action="" id="frm1">
+          <input type="text" name="" id="keyword" placeholder="검색어를 입력해주세요">
+          <input type="submit" id="search">
+        </form>
+      </section>
+    </div>
+    <div class="page" id="page2">
+      <section class="page_wrap" id="insight">
+        <h2 class="page_tit">INSIGHT</h2>
+        <ul class="thumb_list">
+          <li class="col8">
+            <a href="#none">
+              <h4 class="cat_tit">뉴스레터</h4>
+              <h3 class="lst_tit">NFT 관련 주요 현안과 법적 이슈</h3>
+              <p class="lst_com">김·장 법률사무소 가상자산·핀테크 팀에서는 최근 부각되는 NFT와 관련하여 업무 진행 시 고려하여야 할 주요 이슈에 대해 NFT 관련 주요 현안 뉴스레터
+                시리즈를 발행하였습니다. </p>
+              <span class="lst_date">2022.02.24</span>
+            </a>
+          </li>
+
+          <li class="col4">
+            <a href="#none">
+              <h4 class="cat_tit">뉴스레터</h4>
+              <h3 class="lst_tit">신규 상장기업 임원의 주식 의무보유 강화</h3>
+              <p class="lst_com">신규 상장한 대형 상장회사의 경영진이 스톡옵션을 행사하여 취득한 주식을 대량 매도하여 처분한 것이 알려지면서, 금융위원회는 상장 초기 대량매도로 인한
+                주가급변으로부터 투자자를 보호하기 위해서 2022. 2. 22. 신규 상장기업 임원의 주식 의무보유(lock-up) 의무를 강화한다는 취지의 ‘유가증권시장 상장규정’(이하
+                “거래소상장규정”)의 개정과 관련한 보도자료를 발표하였습니다(링크).</p>
+              <span class="lst_date">2022.02.24</span>
+            </a>
+          </li>
+          <li class="col4">
+            <a href="#none">
+              <h4 class="cat_tit">뉴스레터</h4>
+              <h3 class="lst_tit">온라인 사회관계망 서비스(SNS) 부당광고 점검 및 실태조사 결과 발표</h3>
+              <p class="lst_com">최근 소비자들의 온라인 사회관계망 서비스(이하 "SNS") 이용이 보편화되면서 SNS를 통한 후기형 광고가 기존의 TV, 매장 등을 통한 전통적인 광고보다
+                상품의 구매선택에 더 큰 영향력을 행사하고 있다는 소비자 인식조사 결과에도 불구하고, 유튜브나 인스타그램 등 SNS에서 광고라는 사실을 알리지 않는 후기가 급증하여 공정거래위원회와
+                한국소비자원이 모니터링 및 실태조사에 나섰습니다. </p>
+              <span class="lst_date">2022.02.21</span>
+            </a>
+          </li>
+          <li class="col4">
+            <a href="#none">
+              <h4 class="cat_tit">뉴스레터</h4>
+              <h3 class="lst_tit">2022년 근로감독 종합계획</h3>
+              <p class="lst_com">지난 2022. 1. 26. 고용노동부가 ‘2022년 근로감독 종합계획’(이하 “종합계획”)을 발표하여 중요한 내용을 요약해 전달 드립니다.</p>
+              <span class="lst_date">2022.02.11</span>
+            </a>
+          </li>
+          <li class="col4">
+            <a href="#none">
+              <h4 class="cat_tit">뉴스레터</h4>
+              <h3 class="lst_tit">중대재해처벌법 시행 전에 최종 점검할 사항들</h3>
+              <p class="lst_com">‘중대재해 처벌 등에 관한 법률’(이하 “중대재해처벌법”)의 시행이 약 1개월 앞으로 다가옴에 따라(2022. 1. 27. 시행), 많은 기업들은
+                중대재해처벌법이 경영책임자등에게 부과한 안전보건확보의무의 이행을 위한 관리체계 구축, 사규 정비 등의 준비 상황을 최종적으로 점검하고 있습니다. </p>
+              <span class="lst_date">2021.12.23</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="page" id="page3">
+      <section class="page_wrap" id="vs_con">
+        <figure id="vs">
+          <ul class="img_box">
+            <li>
+              <img src="./images/sl2.png" alt="배너1" class="pic">
+              <div class="tit_box">
+                <h3 class="vs_tit">Chambers Asia-Pacific 18개 분야 ‘Band 1’ 선정</h3>
+                <p class="vs_com">김·장 법률사무소가 Chambers Asia-Pacific 2022년판에서 18개 업무분야에서 ‘Band 1’에 랭크되었습니다. 올해도 저희 사무소는 국내
+                  로펌 중 가장 많은 분야에서 최고 등급을 받았으며, 역시 최다 인원인 74명이 ‘Leading Individual’로 등재되며 전 분야에 걸친 경쟁력을 보여주었습니다.</p>
+                <a class="more" href="#none"><span>VIEW MORE</span></a>
+              </div>
+            </li>
+
+            <li>
+              <img src="./images/sl3.jpg" alt="배너2" class="pic">
+              <div class="tit_box">
+                <h3 class="vs_tit">김·장 법률사무소 중대재해 대응 그룹</h3>
+                <p class="vs_com">김∙장 법률사무소 중대재해 대응 그룹은 국내 최대 규모인 약 100여명의 전문가들로 구성되어 있으며, 업무 성격에 따라 관련 분야 및 이슈 전문가들로
+                  최적화된 전담팀을 구성하여 구성원들의 유기적 협업을 통해 각종 산업 분야의 다양한 업무 수요에 종합적으로 대응하고 있습니다.</p>
+                <a class="more" href="#none"><span>VIEW MORE</span></a>
+              </div>
+            </li>
+
+            <li>
+              <img src="./images/sl1.jpg" alt="배너3" class="pic">
+              <div class="tit_box">
+                <h3 class="vs_tit">ALB 올해의 한국 로펌 상 9년 연속 수상</h3>
+                <p class="vs_com">김·장 법률사무소가 ALB Korea Law Awards 2021에서 9년 연속 올해의 한국 로펌 상 수상자로 선정되는 영예를 안았습니다. 이와 함께
+                  분야별 최우수 로펌에 수여되는 Firm award 7개, 탁월한 성과를 낸 변호사에게 수여되는 Individual award 4개, 올해 주목할만한 업무실적을 선정한 Deal
+                  Award 4개를 수상하는 등 총 16개 부문 수상자로 선정되며 최다 부문 수상의 쾌거를 이루었습니다.</p>
+                <a class="more" href="#none"><span>VIEW MORE</span></a>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="btn_box">
+              <li class="on"><button></button></li>
+              <li><button></button></li>
+              <li><button></button></li>
+          </ul>
+        </figure>
+
+        <ul class="ico_link">
+          <li>
+            <a href="#none" class="item1">
+              <span class="ico"><i class="fa fa-map-marker"></i></span>
+              <span>사무소 위치</span>
+            </a>
+          </li>
+          <li>
+            <a href="#none" class="item2">
+              <span class="ico"><i class="fa fa-phone"></i></span>
+              <span>연락처</span>
+            </a>
+          </li>
+        </ul>
+
+        <footer class="ft">
+          <ul class="fnb">
+            <li><a href="#none">사무소위치</a></li>
+            <li><a href="#none">연락처</a></li>
+            <li><a href="#none">면책공고</a></li>
+            <li><a href="#none">개인정보처리방침</a></li>
+            <li><a href="#none">웹접근성</a></li>
+          </ul>
+          <p class="copyright">&copy; 2022 Kim & Chang. All Rights Reserved.</p>
+        </footer>
+        <div id="bottom"></div> <!-- anchor for toBot-->
+      </section>
+    </div>
+  </div>
+  <!-- toTop, toBot -->
+  <a href="#" id="toTop">↑</a>
+  <a href="#bottom" id="toBot">↓</a>
+</body>
+
+</html>
